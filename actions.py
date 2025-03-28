@@ -817,6 +817,9 @@ class Actions(object):
         self.data.control_mode = 'CONFIRM'
         self.message_handler.set_message('INFO', 'confirm: {} ■:y < >:no'.format(action_title[:22]))
 
+    def confirm_reboot(self):
+        self.start_confirm_action('reboot_pi')
+
     def confirm_shutdown(self):
         self.start_confirm_action('shutdown_pi')
 
@@ -984,6 +987,9 @@ class Actions(object):
     #        subprocess.call(['make', '--directory=' + self.data.PATH_TO_OPENFRAMEWORKS + 'apps/myApps/c_o_n_j_u_r' ])
     #        self.message_handler.set_message('INFO', 'finished compiling!')
     #        self.restart_the_program()
+
+    def reboot_pi(self):
+        subprocess.call(['sudo', 'reboot'])
 
     def shutdown_pi(self):
         subprocess.call(['sudo', 'shutdown', '-h', 'now'])

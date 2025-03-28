@@ -195,6 +195,11 @@
             "options": [],
             "value": null
         },
+        "REBOOT_PI": {
+            "action": "reboot_pi",
+            "options": [],
+            "value": null
+        },
         "SHUTDOWN_PI": {
             "action": "shutdown_pi",
             "options": [],
