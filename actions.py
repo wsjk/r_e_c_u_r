@@ -114,6 +114,10 @@ class Actions(object):
     def enter_on_plugins_selection(self):
         self.display.plugins_menu.enter_on_plugins_selection()
 
+    def clear_selected_slot(self):
+        self.data.clear_selected_slot()
+        self.display.browser_menu.generate_browser_list()
+
     def clear_all_slots(self):
         self.data.clear_all_slots()
         self.display.browser_menu.generate_browser_list()
