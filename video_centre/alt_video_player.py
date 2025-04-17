@@ -135,7 +135,14 @@ class AltVideoPlayer:
             self.rate = new_rate
             return new_rate
         else:
-            self.message_handler.set_message('INFO', 'can not set speed outside of range')
+            # self.message_handler.set_message('INFO', 'can not set speed outside of range')
+            self.message_handler.set_message(
+                'INFO', 
+                '{}, {}'.format(
+                    str(self.rate),
+                    str(new_rate)
+                )
+            )
             return self.rate
 
     def get_position(self):
