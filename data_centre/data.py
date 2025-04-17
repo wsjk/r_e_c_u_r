@@ -246,11 +246,6 @@ class Data(object):
             new_slot = dict(name=file_name, location=location, length=length, start=-1, end=-1, rate=1)
             self._update_a_slots_data(slot_number, new_slot)
 
-    def clear_selected_slot(self, slot_number):
-        empty_slot = dict(name='', location='', length=-1, start=-1, end=-1, rate=1)
-        self._update_a_slots_data(slot_number, empty_slot)
-        self._update_json(self.BANK_DATA_JSON, self.bank_data)
-
     def clear_all_slots(self):
         self.bank_data[self.bank_number] = self.create_empty_bank()
         self._update_json(self.BANK_DATA_JSON, self.bank_data)
