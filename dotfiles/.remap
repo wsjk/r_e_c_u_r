@@ -14,6 +14,7 @@ keycode 80=k
 keycode 84=l
 keycode 88=m
 !note: the python code will map 000 to n in the code
+keycode 19=n
 keycode 77=o
 keycode 79=p
 keycode 83=q
