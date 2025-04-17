@@ -175,10 +175,11 @@ class VideoPlayer:
         else:
             self.message_handler.set_message(
                 'INFO', 
-                'can not set speed outside of range {}, {}, {}'.format(
-                    self.omx_player.maximum_rate(), 
-                    self.omx_player.minimum_rate(),
-                    new_rate
+                '{}, {}, {}, {}'.format(
+                    str(self.rate),
+                    str(new_rate),
+                    str(self.omx_player.maximum_rate()), 
+                    str(self.omx_player.minimum_rate())
                 )
             )
             return self.rate
