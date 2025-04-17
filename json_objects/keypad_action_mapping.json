@@ -100,13 +100,13 @@
 		"NAV_QKSH": ["switch_to_preset_2","select_preset_2"]
 	},
 	"m": {
-		"DEFAULT": ["load_slot_3_into_next_player", "decrease_speed"],
+		"DEFAULT": ["load_slot_3_into_next_player", "increase_speed"],
 		"PLAY_SHADER": ["play_shader_3"],
         "NAV_DETOUR": ["switch_to_detour_3"],
 		"NAV_QKSH": ["switch_to_preset_3","select_preset_3"]
 	},
 	"n": {
-		"DEFAULT": ["load_slot_4_into_next_player", "increase_speed"],
+		"DEFAULT": ["load_slot_4_into_next_player", "decrease_speed"],
 		"PLAY_SHADER": ["play_shader_4"],
 		"NAV_QKSH": ["switch_to_preset_4","select_preset_4"]
 	},

@@ -270,7 +270,7 @@ class Actions(object):
 
     def decrease_speed(self):
         print("increasing speed !")
-        new_rate = self.video_driver.current_player.change_rate(-1)
+        new_rate = self.video_driver.current_player.change_rate(-0.1)
         current_bank, current_slot = self.data.split_bankslot_number(self.video_driver.current_player.bankslot_number)
         self.data.update_slot_rate_to_this(current_slot, new_rate)
         # self._load_this_slot_into_next_player(current_slot)
