@@ -167,10 +167,20 @@ class VideoPlayer:
             updated_speed = self.omx_player.set_rate(new_rate)
             self.rate = new_rate
             print('max rate {} , min rate {} '.format(self.omx_player.maximum_rate(), self.omx_player.minimum_rate()))
-            self.message_handler.set_message('INFO', 'changing rate to {}'.format(new_rate))
+            self.message_handler.set_message(
+                'INFO', 
+                'changing rate to {}'.format(new_rate)
+            )
             return new_rate
         else:
-            self.message_handler.set_message('INFO', 'can not set speed outside of range {} {}'.format(self.omx_player.maximum_rate(), self.omx_player.minimum_rate()))
+            self.message_handler.set_message(
+                'INFO', 
+                'can not set speed outside of range {}, {}, {}'.format(
+                    self.omx_player.maximum_rate(), 
+                    self.omx_player.minimum_rate(),
+                    new_rate
+                )
+            )
             return self.rate
 
     def set_position(self, position):
