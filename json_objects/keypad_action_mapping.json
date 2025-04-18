@@ -1,7 +1,7 @@
 {
 	"a": {
 		"NAV_BROWSER": ["move_browser_selection_up", "move_browser_selection_page_up"],
-		"DEFAULT": ["seek_back_on_player", "decrease_seek_time"],
+		"DEFAULT": ["seek_back_on_player", "decrease_speed"],
 		"NAV_SETTINGS": ["move_settings_selection_up", "move_settings_selection_page_up"],
 		"NAV_SHADERS": ["move_shaders_selection_up", "move_shaders_selection_page_up"],
 		"NAV_PLUGINS": ["move_plugins_selection_up", "move_plugins_selection_page_up"],
@@ -16,7 +16,7 @@
 	},
 	"b": {
 		"NAV_BROWSER": ["move_browser_selection_down", "move_browser_selection_page_down"],
-		"DEFAULT": ["seek_forward_on_player", "increase_seek_time"],
+		"DEFAULT": ["seek_forward_on_player", "increase_speed"],
 		"NAV_SETTINGS": ["move_settings_selection_down", "move_settings_selection_page_down"],
 		"NAV_SHADERS": ["move_shaders_selection_down", "move_shaders_selection_page_down"],
 		"NAV_PLUGINS": ["move_plugins_selection_down", "move_plugins_selection_page_down"],
@@ -100,13 +100,13 @@
 		"NAV_QKSH": ["switch_to_preset_2","select_preset_2"]
 	},
 	"m": {
-		"DEFAULT": ["load_slot_3_into_next_player", "increase_speed"],
+		"DEFAULT": ["load_slot_3_into_next_player", "decrease_seek_time"],
 		"PLAY_SHADER": ["play_shader_3"],
         "NAV_DETOUR": ["switch_to_detour_3"],
 		"NAV_QKSH": ["switch_to_preset_3","select_preset_3"]
 	},
 	"n": {
-		"DEFAULT": ["load_slot_4_into_next_player", "decrease_speed"],
+		"DEFAULT": ["load_slot_4_into_next_player", "increase_seek_time"],
 		"PLAY_SHADER": ["play_shader_4"],
 		"NAV_QKSH": ["switch_to_preset_4","select_preset_4"]
 	},
