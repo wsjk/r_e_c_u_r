@@ -154,7 +154,7 @@ class NumpadInput(object):
             print("    no additional events, sending s")
             self.in_0_event = False
             self.run_action_for_mapped_key('s')
-        elif (self.additional_0_in_event > 1):
+        elif (self.additional_0_in_event >= 1):
             print("    %s additional events, sending n" % self.additional_0_in_event)
             self.in_0_event = False
             self.run_action_for_mapped_key('n')
@@ -167,6 +167,6 @@ class NumpadInput(object):
         if (self.additional_0_in_event == 1):
             self.in_0_event = False
             self.run_action_for_mapped_key('s')
-        elif (self.additional_0_in_event > 1):
+        elif (self.additional_0_in_event >= 1):
             self.in_0_event = False
             self.run_action_for_mapped_key('n')
