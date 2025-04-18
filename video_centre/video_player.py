@@ -175,9 +175,8 @@ class VideoPlayer:
         else:
             self.message_handler.set_message(
                 'INFO', 
-                '{}, {}, {}, {}'.format(
+                '{}, {}, {}'.format(
                     str(self.rate),
-                    str(new_rate),
                     str(self.omx_player.maximum_rate()), 
                     str(self.omx_player.minimum_rate())
                 )
