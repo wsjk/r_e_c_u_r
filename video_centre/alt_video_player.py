@@ -133,6 +133,10 @@ class AltVideoPlayer:
         if new_rate >= -3 and new_rate <= 3:
             self.client.send_message("/player/{}/speed".format(self.name[0]), new_rate)
             self.rate = new_rate
+            self.message_handler.set_message(
+                'INFO', 
+                'changing rate to {}'.format(new_rate)
+            )
             return new_rate
         else:
             # self.message_handler.set_message('INFO', 'can not set speed outside of range')
