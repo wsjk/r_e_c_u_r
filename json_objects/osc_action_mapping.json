@@ -147,12 +147,12 @@
         "NAV_DETOUR": ["switch_to_detour_2", "clear_this_detour"]
 	},
 	"m": {
-		"DEFAULT": ["load_slot_3_into_next_player"],
+		"DEFAULT": ["load_slot_3_into_next_player", "decrease_speed"],
 		"PLAY_SHADER": ["play_shader_3"],
         "NAV_DETOUR": ["switch_to_detour_3"]
 	},
 	"n": {
-		"DEFAULT": ["load_slot_4_into_next_player"],
+		"DEFAULT": ["load_slot_4_into_next_player", "increase_speed"],
 		"PLAY_SHADER": ["play_shader_4"]
 	},
 	"o": {
